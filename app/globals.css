@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-green: #1a7a3c;
+  --brand-green-dark: #156030;
+  --brand-green-light: #e8f5ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #111827;
+  background: #fff;
+}
+
+@layer utilities {
+  .btn-green {
+    @apply bg-[#43A332] hover:bg-[#156030] text-white font-semibold rounded-full px-5 py-2.5 transition-colors duration-200 cursor-pointer;
+  }
+}
