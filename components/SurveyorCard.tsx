@@ -47,10 +47,10 @@ export default function SurveyorCard({ surveyor }: { surveyor: Surveyor }) {
           <Mail className="w-4 h-4 text-gray-400 shrink-0" />
           <span className="truncate">{surveyor.email}</span>
         </div>
-        <div className="flex items-start gap-2">
+        {/* <div className="flex items-start gap-2">
           <UserSquare2 className="w-4 h-4 text-gray-400 shrink-0 mt-0.5" />
           <span className="text-xs text-gray-500 leading-snug">{surveyor.specialization}</span>
-        </div>
+        </div> */}
       </div>
 
       {/* CTA */}
