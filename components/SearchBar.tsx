@@ -42,7 +42,7 @@ export default function SearchBar({ elevated = false }: SearchBarProps) {
           <label className="block text-xs text-gray-400 mb-1 font-medium">Name or Reg Number</label>
           <input
             type="text"
-            placeholder="e.g. Tosin, SURCON1234.."
+            placeholder="e.g. SURCON1234.."
             value={name}
             onChange={e => setName(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && handleSearch()}

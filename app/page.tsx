@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -8,47 +9,32 @@ import chairman from "@/assets/chairman.jpg";
 import vice from "@/assets/vice.jpg";
 import sec from "@/assets/secretary.jpg";
 import Image from "next/image";
+import LeadershipSection from "@/components/LeadershipSection";
+import { useSurveyors } from "@/lib/useSurveyors";
 
-const services = [
-  { num: "01", name: "Cadastral Surveys" },
-  { num: "02", name: "Engineering Surveys" },
-  { num: "03", name: "Topographical Surveys" },
-  { num: "04", name: "Hydrographic Surveys" },
-  { num: "05", name: "GIS & Mapping" },
-  { num: "06", name: "Property Boundary Surveys" },
-  { num: "07", name: "Construction Setting Out" },
-  { num: "08", name: "Drone Surveying" },
-];
 
-const stats = [
-  { value: "100%", label: "Verified Members" },
-  { value: "1,000+", label: "Registered Surveyors" },
-  { value: "500+", label: "Completed Projects" },
-  { value: "16", label: "Local Government Area Covered" },
-];
-
-const leaders = [
-  {
-    name: "Surv. Alhaji Abdulganiyu A.",
-    role: "Chairman",
-    badge: "FNIS",
-    img: chairman,
-  },
-  {
-    name: "Surv. Alhaji Abdulganiyu A.",
-    role: "Vice Chairman",
-    badge: "MNIS",
-    img: vice,
-  },
-  {
-    name: "Surv. Alhaji Abdulganiyu A.",
-    role: "Secretary",
-    badge: "MNIS",
-    img: sec,
-  },
-];
 
 export default function Home() {
+  const services = [
+    { num: "01", name: "Cadastral Surveys" },
+    { num: "02", name: "Engineering Surveys" },
+    { num: "03", name: "Topographical Surveys" },
+    { num: "04", name: "Hydrographic Surveys" },
+    { num: "05", name: "GIS & Mapping" },
+    { num: "06", name: "Property Boundary Surveys" },
+    { num: "07", name: "Construction Setting Out" },
+    { num: "08", name: "Drone Surveying" },
+  ];
+  
+  const { surveyors } = useSurveyors()
+  
+  const stats = [
+    { value: "100%", label: "Verified Members" },
+    { value: surveyors.length, label: "Registered Surveyors" },
+    { value: "500+", label: "Completed Projects" },
+    { value: "16", label: "Local Government Area Covered" },
+  ];
+    
   return (
     <div className="h-[100vh] overflow-y-scroll flex flex-col scroll-smooth">
       <Navbar />
@@ -165,7 +151,7 @@ export default function Home() {
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10 text-center">
           Branch Executive Leadership
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {leaders.map((l, i) => (
             <div
               key={i}
@@ -195,7 +181,8 @@ export default function Home() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
+        <LeadershipSection/>
       </section>
 
       <Footer />
