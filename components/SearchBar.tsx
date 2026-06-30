@@ -63,7 +63,7 @@ export default function SearchBar({ elevated = false }: SearchBarProps) {
         </div>
 
         {/* Specialization */}
-        <div className="sm:w-52">
+        {/* <div className="sm:w-52">
           <label className="block text-xs text-gray-400 mb-1 font-medium">Specialization</label>
           <select
             value={spec}
@@ -72,7 +72,7 @@ export default function SearchBar({ elevated = false }: SearchBarProps) {
           >
             {specializations.map(s => <option key={s}>{s}</option>)}
           </select>
-        </div>
+        </div> */}
 
         {/* Button */}
         <div className="flex items-end">
