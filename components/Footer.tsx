@@ -96,9 +96,9 @@ export default function Footer() {
               </Link>
             </div>
             <div className="space-y-2">
-              <p className="text-sm text-gray-500">hello@meridian.travel</p>
-              <p className="text-sm text-gray-500">+1 (212) 234 4567</p>
-              <p className="text-sm text-gray-500">New York</p>
+              <p className="text-sm text-gray-500">appsnkwara@gmail.com</p>
+              <p className="text-sm text-gray-500">09137550602</p>
+              <p className="text-sm text-gray-500">Along Ikoyi Avenue, Off New Yidi Rd, Ilorin, Kwara</p>
             </div>
           </div>
         </div>
