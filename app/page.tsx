@@ -125,7 +125,7 @@ export default function Home() {
             >
               Connect with licensed and experienced private practising surveyors
               for land surveys, property documentation, engineering surveys, GIS
-              mapping, and more—all in one trusted directory.
+              mapping, and more all in one trusted directory.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
