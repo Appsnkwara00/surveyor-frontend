@@ -82,12 +82,12 @@ export default function Footer() {
               >
                 Surveyors
               </Link>
-              {/* <Link
-                href="#"
+              <Link
+                href="/#executives"
                 className="block text-sm text-gray-500 hover:text-gray-800 transition-colors"
               >
-                Resources
-              </Link> */}
+                Executives
+              </Link>
             </div>
             <div className="space-y-2">
               <p className="text-sm text-gray-500">appsnkwara@gmail.com</p>

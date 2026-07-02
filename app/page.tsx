@@ -402,7 +402,7 @@ export default function Home() {
       </section>
 
       {/* Branch Executive Leadership */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 w-full">
+      <section id="executives" className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 w-full">
         <Reveal>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10 text-center">
             Branch Executive Leadership
